@@ -40,7 +40,7 @@ class Quizlet : AppCompatActivity() {
                 val userAnswerText = binding.txtIdAnswer.text.toString().trim()
 
                 if (userAnswerText.isEmpty()) {
-                    displayMessage("Please enter your answer.")
+                    displayMessage("Please enter your answer Senpai.")
                 } else {
                     userAnswer = userAnswerText.toInt()
                     pauseTimer()
@@ -130,7 +130,14 @@ class Quizlet : AppCompatActivity() {
                 resetTimer()
                 userLife--
                 binding.txtIdLife.text = userLife.toString()
-                binding.txtIdQuestion.text = "Times Up!"
+                //binding.txtIdQuestion.text = "Times Up!"
+
+                if (userLife > 0) {
+                    gameContinue() // Simulate a click on the "Next" button
+                } else {
+                    handleGameOver()
+
+                }
             }
         }.start()
 
@@ -155,5 +162,18 @@ class Quizlet : AppCompatActivity() {
 
     private fun displayMessage(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+    @SuppressLint("SetTextI18n")
+    private fun handleGameOver() {
+        binding.txtIdQuestion.text = "Game Over"
+        binding.btnIdOk.isEnabled = false
+        binding.btnIdNext.isEnabled = false
+
+        Toast.makeText(applicationContext, "Game Over", Toast.LENGTH_SHORT).show()
+
+        val intentResult = Intent(this, result::class.java)
+        intentResult.putExtra("score", userScore)
+        startActivity(intentResult)
+        finish()
     }
 }

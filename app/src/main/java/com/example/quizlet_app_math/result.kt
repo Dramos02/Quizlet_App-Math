@@ -14,7 +14,6 @@ class result : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         binding.btnIdPlay.setOnClickListener {
             val intentMain = Intent(this, MainActivity::class.java)
             startActivity(intentMain)

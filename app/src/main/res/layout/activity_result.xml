@@ -48,7 +48,7 @@
         android:fontFamily="@font/nextsundayt"
         android:gravity="center"
         android:text="@string/ScoreInt"
-        android:textColor="#FFFFFF"
+        android:textColor="#050505"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,14 +1,16 @@
 <resources>
     <string name="app_name">Quizlet_App-Math</string>
+    <string name="copyrights">Copyrights Dominic Ramos
+                                github/@Dramos02</string>
     <string name="Addition">Addition</string>
     <string name="Subtraction">Subtraction</string>
     <string name="Multiplication">Multiplication</string>
 
-    <string name="Score">Score</string>
+    <string name="Score">Score:</string>
     <string name="ScoreInt">0</string>
-    <string name="Life">Life</string>
+    <string name="Life">Life:</string>
     <string name="LifeInt">3</string>
-    <string name="Time">Time</string>
+    <string name="Time">Time:</string>
     <string name="TimeInt">60</string>
 
     <string name="Answer">Write The Answer</string>

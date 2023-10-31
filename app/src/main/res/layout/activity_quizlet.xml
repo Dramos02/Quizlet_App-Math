@@ -17,24 +17,24 @@
         android:fontFamily="@font/nextsundayt"
         android:gravity="center"
         android:text="@string/Score"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textColor="#070707"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txt_id_Score"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_id_Score"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="46dp"
+        android:layout_height="21dp"
         android:fontFamily="@font/nextsundayt"
         android:text="@string/ScoreInt"
-        android:textColor="#FFFFFF"
+        android:textColor="#1B1919"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/ScoreView"
         app:layout_constraintEnd_toStartOf="@+id/LifeView"
+        app:layout_constraintStart_toEndOf="@+id/ScoreView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -44,24 +44,25 @@
         android:fontFamily="@font/nextsundayt"
         android:gravity="center"
         android:text="@string/Life"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textColor="#0E0D0D"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/txt_id_Score"
         app:layout_constraintEnd_toStartOf="@+id/txt_id_Life"
+        app:layout_constraintStart_toEndOf="@+id/txt_id_Score"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_id_Life"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="52dp"
+        android:layout_height="22dp"
         android:fontFamily="@font/nextsundayt"
         android:text="@string/LifeInt"
-        android:textColor="#FFFFFF"
+        android:textAlignment="viewStart"
+        android:textColor="#0C0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/LifeView"
         app:layout_constraintEnd_toStartOf="@+id/TimeView"
+        app:layout_constraintStart_toEndOf="@+id/LifeView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -71,24 +72,25 @@
         android:fontFamily="@font/nextsundayt"
         android:gravity="center"
         android:text="@string/Time"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/txt_id_Life"
         app:layout_constraintEnd_toStartOf="@+id/txt_id_Time"
+        app:layout_constraintStart_toEndOf="@+id/txt_id_Life"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_id_Time"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
         android:fontFamily="@font/nextsundayt"
         android:text="@string/TimeInt"
-        android:textColor="#FFFFFF"
+        android:textColor="#020202"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/TimeView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TimeView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -99,7 +101,7 @@
         android:fontFamily="@font/nextsundayt"
         android:gravity="center"
         android:text="TextView"
-        android:textColor="#FFFFFF"
+        android:textColor="#1C1C1C"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

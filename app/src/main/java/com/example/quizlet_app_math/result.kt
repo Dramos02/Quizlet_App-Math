@@ -27,5 +27,11 @@ class result : AppCompatActivity() {
         val intentResult = intent
         score = intentResult.getIntExtra("score", 0)
         binding.txtviewIdResult.text = score.toString()
+
+        if (score == 0){
+            binding.congratsView.text = "Better Luck Next Time"
+        } else {
+            binding.congratsView.text = "Congratulations Senpai!!"
+        }
     }
 }

@@ -20,7 +20,7 @@ class Quizlet : AppCompatActivity() {
     private var userLife = 3
 
     private lateinit var timer: CountDownTimer
-    private val START_TIMER_IN_MILLIS: Long = 21000
+    private val START_TIMER_IN_MILLIS: Long = 31000
     private var timerRunning = false
     private var timeLeftInMillis = START_TIMER_IN_MILLIS
 
@@ -67,7 +67,7 @@ class Quizlet : AppCompatActivity() {
         binding.btnIdNext.setOnClickListener {
             val userAnswerText = binding.txtIdAnswer.text.toString().trim()
             if (userAnswerText.isEmpty()) {
-                displayMessage("Please enter your answer before moving to the next question.")
+                displayMessage("Don't click it Senpai answer it first.")
             } else {
                 binding.txtIdAnswer.text.clear()
                 resetTimer()
@@ -130,10 +130,9 @@ class Quizlet : AppCompatActivity() {
                 resetTimer()
                 userLife--
                 binding.txtIdLife.text = userLife.toString()
-                //binding.txtIdQuestion.text = "Times Up!"
 
                 if (userLife > 0) {
-                    gameContinue() // Simulate a click on the "Next" button
+                    gameContinue()
                 } else {
                     handleGameOver()
 
